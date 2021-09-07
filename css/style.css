@@ -6,12 +6,9 @@
     --neutral-very-dark-blue: hsl(209, 33%, 12%);
 }
 
-* {
-    font-size: 20px;
-}
-
 body {
     font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
 }
 
 body, 
@@ -26,6 +23,29 @@ ul,
 li {    
     margin: 0; 
     padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 81px 37px 0 37px;
+    gap: 36px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+#logo {
+    max-width: 56px;
+    margin: 0 auto;
 }
 
 
