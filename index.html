@@ -22,9 +22,12 @@
       <h3 class="page-title">We are launching <span>soon!</span></h3>
       <h5 class="page-subtitle">Subscribe and get notified</h5>
       <div class="input-group">
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="Your email address...">
-        <button class="btn" type="submit">Notify Me</button>
+        <form method="POST" enctype="application/x-www-form-urlencoded">
+          <label for="email"></label>
+          <input type="email" name="email" id="email" class="error-red-border email-input" placeholder="Your email address...">
+          <div class="error-msg">Please provide a valid email address</div>
+          <button class="btn" type="submit" formnovalidate>Notify Me</button>
+        </form>
       </div>
     </div>
     <div class="img-container">
@@ -44,5 +47,6 @@
     </footer>
   </div>
   <script src="https://kit.fontawesome.com/4e350552b6.js" crossorigin="anonymous"></script>
+  <script src="js/email-validation.js"></script>
 </body>
 </html>
