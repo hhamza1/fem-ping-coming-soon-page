@@ -30,6 +30,9 @@ Users should be able to:
 #### Mobile View
 ![Mobile View](./screenshots/mobile-view.png)
 
+#### Mobile View - Active-state
+![Mobile View](./screenshots/mobile-view-active.png)
+
 #### Desktop View
 ![Desktop View](./screenshots/desktop-view.png)
 
