@@ -21,22 +21,33 @@
     <div class="page-details">
       <h3 class="page-title">We are launching <span>soon!</span></h3>
       <h5 class="page-subtitle">Subscribe and get notified</h5>
-      <div class="input-group">
-        <form method="POST" enctype="application/x-www-form-urlencoded">
+        <form class="input-group" method="POST" enctype="application/x-www-form-urlencoded">
           <label for="email"></label>
-          <input type="email" name="email" id="email" class="email-input" placeholder="Your email address...">
-          <div class="error-msg">Please provide a valid email address</div>
+          <div class="email-input-group">
+            <input type="email" name="email" id="email" class="email-input" placeholder="Your email address...">
+            <div class="error-msg">Please provide a valid email address</div>
+          </div>
           <button class="btn" type="submit" formnovalidate>Notify Me</button>
         </form>
-      </div>
     </div>
     <div class="img-container">
       <img src="./assets/illustration-dashboard.png" alt="dashboard">
     </div>
     <div class="icons-container">
-      <span class="icon-border"><i class="fab fa-facebook-f"></i></span>
-      <span class="icon-border"><i class="fab fa-twitter"></i></span>
-      <span class="icon-border"><i class="fab fa-instagram"></i></span>
+      <span class="icon-border">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </span>
+      <span class="icon-border">
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter">
+          </i>
+        </a>
+      </span>
+      <span class="icon-border">
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      </span>
     </div>  
     <footer>
       <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
