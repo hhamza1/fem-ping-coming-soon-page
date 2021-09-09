@@ -36,6 +36,9 @@ Users should be able to:
 #### Desktop View
 ![Desktop View](./screenshots/desktop-view.png)
 
+#### Desktop View
+![Desktop View](./screenshots/desktop-view-active.png)
+
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/hhamza1/fem-ping-coming-soon-page)
@@ -48,7 +51,6 @@ Users should be able to:
 - HTML
 - CSS
 - Mobile-first workflow
-- Grid
 - Flexbox
 
 ## Author
