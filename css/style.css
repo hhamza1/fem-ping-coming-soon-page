@@ -6,6 +6,10 @@
     --neutral-very-dark-blue: hsl(209, 33%, 12%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
@@ -20,7 +24,7 @@ h5,
 h6, 
 p, 
 ul, 
-li {    
+li, button {    
     margin: 0; 
     padding: 0;
 }
@@ -70,20 +74,17 @@ li {
 .input-group {
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
     padding: 16px 11px;
     padding-right: 0;
 }
-
-
-
 
 .email-input {
     border: 1px solid var(--secondary-pale-blue);
     padding: 10px 0 10px 32px;
     border-radius: 28px;
-    margin-bottom: 10px;
     color: var(--neutral-very-dark-blue);
-    width: 85%;
+    width: 100%;
     transition: border .1s ease-in-out;
 }
 
@@ -92,15 +93,19 @@ li {
 }
 
 .btn {
-    padding: 12px 0;
-    background: var(--primary-blue);
-    color: #fff;
-    border: none;
-    font-weight: 600;
-    line-height: 16px;
+    border: 0;
     border-radius: 28px;
+    background: var(--primary-blue);
+    font-weight: 600;
+    color: #fff;
     box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
-    width: 100%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    height: 56px;
+}
+
+.btn:hover {
+    background: var(--secondary-pale-blue);
 }
 
 .error-msg {
@@ -113,7 +118,7 @@ li {
 
 .show-msg{
     opacity: 1;
-    padding: 2px 0 20px 0;
+    padding: 10px 0 20px 0;
 }
 
 
@@ -132,12 +137,31 @@ li {
 .icons-container span {
     border: 1px solid var(--secondary-pale-blue);
     border-radius: 50%;
-    width: 100%;
-    max-width: 32px;
-    padding: 6px;
-    color: var(--primary-blue);
-    font-size: 20px;
+    font-size: 16px;
+    padding: 6px 9px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
+
+.icons-container a {
+    color: var(--primary-blue);
+}
+
+.icons-container span:hover > a{
+    color: #fff;
+}
+
+.icons-container a:active, .icons-container a:visited {
+    color: var(--primary-blue);
+}
+
+
+.icons-container span:hover {
+    border: none;
+    background: var(--primary-blue);
+    
+}
+
 
 footer {
     display: flex;
@@ -154,3 +178,56 @@ footer .copyright {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: var(--secondayr-light-red); }
+
+
+
+/*=========== Desktop Style =======================*/
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .input-group {
+        flex-direction: row;
+    }
+
+
+    .email-input {
+        padding: 18px 0;
+        padding-left: 32px;
+    }
+
+    .btn {
+        flex-grow: 2;
+    }
+
+    .email-input-group{
+        flex-grow: 4;
+    }
+
+    .error-msg {
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 32px;
+    }
+
+
+}
